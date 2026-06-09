@@ -191,6 +191,10 @@ export default function Home() {
           <input id="phone" name="phone" type="tel" placeholder="请输入手机号" required />
         </div>
         <div className="form-row">
+          <label htmlFor="visitDate">期望到店日期</label>
+          <input id="visitDate" name="visitDate" type="date" required />
+        </div>
+        <div className="form-row">
           <label htmlFor="pet">宠物类型</label>
           <select id="pet" name="pet">
             <option>小型犬</option>
