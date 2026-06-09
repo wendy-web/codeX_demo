@@ -31,8 +31,12 @@ export default function Home() {
       <div className="hero-media">
         <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?auto=format&fit=crop&w=1200&q=82" alt="两只干净可爱的宠物犬" />
         <div className="hours">
-          <strong>今日可约 10:00 - 20:00</strong>
-          <span>建议提前 2 小时预约，猫咪护理提供安静时段。</span>
+          <strong>可预约时间</strong>
+          <div className="hours-list">
+            <span>工作日 10:00 - 20:00</span>
+            <span>节假日 09:30 - 21:00</span>
+          </div>
+          <p>建议提前 2 小时预约，猫咪护理提供安静时段。</p>
         </div>
       </div>
     </section>

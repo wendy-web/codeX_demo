@@ -175,11 +175,24 @@
 
     .hours strong {
       display: block;
-      margin-bottom: 4px;
+      margin-bottom: 8px;
       font-size: 18px;
     }
 
-    .hours span {
+    .hours-list {
+      display: grid;
+      gap: 4px;
+      margin-bottom: 8px;
+    }
+
+    .hours-list span {
+      color: var(--ink);
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .hours p {
+      margin: 0;
       color: var(--muted);
       font-size: 14px;
     }
