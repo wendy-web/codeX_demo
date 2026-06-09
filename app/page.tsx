@@ -1,4 +1,5 @@
-﻿import ProcessCarousel from "./components/ProcessCarousel";
+import ProcessCarousel from "./components/ProcessCarousel";
+import VisitDateTimeInput from "./components/VisitDateTimeInput";
 
 export default function Home() {
   return (
@@ -191,8 +192,8 @@ export default function Home() {
           <input id="phone" name="phone" type="tel" placeholder="请输入手机号" required />
         </div>
         <div className="form-row">
-          <label htmlFor="visitDate">期望到店日期</label>
-          <input id="visitDate" name="visitDate" type="date" required />
+          <label htmlFor="visitDate">期望到店时间</label>
+          <VisitDateTimeInput />
         </div>
         <div className="form-row">
           <label htmlFor="pet">宠物类型</label>
