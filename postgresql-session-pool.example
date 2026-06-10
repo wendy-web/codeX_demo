@@ -1,0 +1,19 @@
+# PostgreSQL Session Pool 标识文件
+
+这个文件专门标识本项目后端写库需要的 PostgreSQL Session Pool 配置。
+
+需要配置的环境变量：
+
+```env
+POSTGRES_SESSION_POOL_URL="postgresql://postgres.PROJECT_REF:PASSWORD@aws-0-REGION.pooler.supabase.com:5432/postgres?sslmode=require"
+```
+
+使用方式：
+
+1. 在 Supabase 后台找到 PostgreSQL 的 Session Pool 连接串。
+2. 在项目根目录新建 `.env.local`。
+3. 把上面的 `POSTGRES_SESSION_POOL_URL` 复制到 `.env.local`。
+4. 把 `PROJECT_REF`、`PASSWORD`、`REGION` 换成你自己的 Supabase 项目信息。
+5. 重启 `npm run dev`。
+
+注意：`.env.local` 是本地密钥文件，不要提交到代码仓库。

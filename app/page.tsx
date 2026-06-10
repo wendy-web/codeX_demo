@@ -1,5 +1,5 @@
+import BookingForm from "./components/BookingForm";
 import ProcessCarousel from "./components/ProcessCarousel";
-import VisitDateTimeInput from "./components/VisitDateTimeInput";
 
 export default function Home() {
   return (
@@ -181,34 +181,7 @@ export default function Home() {
           <img className="store-map-image" src="/assets/cute-pet-shop-map.png" alt="可爱宠物风格地图，标记毛孩子宠物洗护位于上海市宜川路街道陕西北路1620号" />
         </div>
       </div>
-      <form className="booking" id="booking">
-        <h3>快速预约</h3>
-        <div className="form-row">
-          <label htmlFor="name">您的称呼</label>
-          <input id="name" name="name" placeholder="例如：王女士" required />
-        </div>
-        <div className="form-row">
-          <label htmlFor="phone">联系电话</label>
-          <input id="phone" name="phone" type="tel" placeholder="请输入手机号" required />
-        </div>
-        <div className="form-row">
-          <label htmlFor="visitDate">期望到店时间</label>
-          <VisitDateTimeInput />
-        </div>
-        <div className="form-row">
-          <label htmlFor="pet">宠物类型</label>
-          <select id="pet" name="pet">
-            <option>小型犬</option>
-            <option>中大型犬</option>
-            <option>猫咪</option>
-          </select>
-        </div>
-        <div className="form-row">
-          <label htmlFor="message">护理需求</label>
-          <textarea id="message" name="message" placeholder="例如：洗澡、修毛、毛结比较多"></textarea>
-        </div>
-        <button className="button" type="submit">提交预约</button>
-      </form>
+      <BookingForm />
     </section>
   </main>
 

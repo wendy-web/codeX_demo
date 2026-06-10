@@ -18,6 +18,7 @@ Desktop.ini
 # Dependencies
 node_modules/
 vendor/
+.netlify-mcp-runner/
 
 # Build output
 .next/

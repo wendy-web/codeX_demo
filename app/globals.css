@@ -710,6 +710,29 @@
       resize: vertical;
     }
 
+    .form-message {
+      margin: 0 0 14px;
+      padding: 10px 12px;
+      border-radius: 8px;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .form-message.success {
+      color: #246b45;
+      background: #eaf7ee;
+    }
+
+    .form-message.error {
+      color: #9d2d20;
+      background: #fff0ed;
+    }
+
+    .button:disabled {
+      cursor: not-allowed;
+      opacity: 0.68;
+    }
+
     footer {
       padding: 24px clamp(18px, 5vw, 72px);
       color: var(--muted);
